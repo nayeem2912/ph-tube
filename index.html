@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH-TUBE</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<style>
+    .active{
+        background-color:#FF1F3D;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav class="w-11/12 mx-auto  flex justify-between border-b-2 border-[#17171720] py-5">
+            <div class="logo">
+                <img class="w-[120px]" src="assets/Logo.png" alt="">
+            </div>
+            <div class="Sort">
+                <button class="btn bg-[#25252520] rounded-[4px]">Sort by view</button>
+            </div>
+            <div class="blogs">
+                <button class="btn bg-[#FF1F3D] text-white rounded-[4px]">Blogs</button>
+            </div>
+        </nav>
+    </header>
+    <nav id="category-container" class="flex justify-center py-5 gap-5">
+        <div><button onclick="loadVideos()" class="btn btn-sm bg-[#FF1F3D] text-white">All</button></div>
+        
+    </nav>
+
+    <section class="w-11/12 mx-auto lg:grid lg:grid-cols-4 gap-4" id="video-container">
+        <!-- <div class="card bg-base-100 ">
+            <figure class="relative ">
+              <img
+                src="https://i.ibb.co/QPNzYVy/moonlight.jpg"
+                alt="Shoes" />
+                <span class="absolute bottom-2 right-2 text-white bg-black px-1 py-0.5 text-sm rounded text-center">3hrs 56 min ago</span>
+            </figure>
+            <div class=" flex gap-3 px-0 py-5">
+              <div class="profile">
+                <div class="avatar">
+                    <div class="w-10 rounded-full">
+                      <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                    </div>
+                  </div>
+              </div>
+              <div class="intro space-y-2">
+                <h2 class="text-sm font-semibold">Building a Winning UX Strategy Using the Kano Model</h2>
+                <p class="text-[#17171770] flex gap-3 text-[14px]">Awlad Hossain <img src="assets/Group 3.png" alt=""></p>
+                <p class="text-[#17171770] text-[14px]">91K views</p>
+              </div>
+            </div>
+          </div> -->
+      
+
+          <!-- <div class="col-span-full flex flex-col text-center justify-center items-center py-20">
+            <img class="w-[120px]" src="assets/Icon.png" alt="">
+            <h2 class="font-bold text-[32px] ">Oops!! Sorry, There is no <br> content here</h2>
+          </div> -->
+    </section>
+
+    <script src="script/index.js"></script>
+</body>
+</html>
+
