@@ -21,17 +21,27 @@
                 <img class="w-[120px]" src="assets/Logo.png" alt="">
             </div>
             <div class="Sort">
-                <button class="btn bg-[#25252520] rounded-[4px]">Sort by view</button>
+              <label class="input">
+                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g></svg>
+                <input id="search-input" type="search" required placeholder="Search"/>
+              </label>
+               
             </div>
             <div class="blogs">
-                <button class="btn bg-[#FF1F3D] text-white rounded-[4px]">Blogs</button>
+              <button class="btn bg-[#FF1F3D] text-white rounded-[4px]">Sort by view</button>
             </div>
         </nav>
     </header>
     <nav id="category-container" class="flex justify-center py-5 gap-5">
-        <div><button onclick="loadVideos()" class="btn btn-sm bg-[#FF1F3D] text-white">All</button></div>
+        <div><button id="btn-all" onclick="loadVideos()" class="btn btn-sm ">All</button></div>
         
     </nav>
+
+    <section id="loader" class="text-center py-36 hidden">
+      <span class="loading loading-dots loading-xl"></span>
+    </section>
+
+
 
     <section class="w-11/12 mx-auto lg:grid lg:grid-cols-4 gap-4" id="video-container">
         <!-- <div class="card bg-base-100 ">
@@ -62,7 +72,23 @@
             <img class="w-[120px]" src="assets/Icon.png" alt="">
             <h2 class="font-bold text-[32px] ">Oops!! Sorry, There is no <br> content here</h2>
           </div> -->
-    </section>
+    
+          <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="video_details.showModal()">open modal</button> -->
+<dialog id="video_details" class="modal">
+  <div class="modal-box">
+    <div id="details_container"></div>
+    <div class="modal-action">
+      <form method="dialog">
+         if there is a button in form, it will close the modal
+         <button class="btn">Close</button>
+      </form>
+    </div>
+    </div>
+</dialog> 
+     
+    
+        </section>
 
     <script src="script/index.js"></script>
 </body>
